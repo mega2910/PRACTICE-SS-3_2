@@ -1,0 +1,17 @@
+start
+
+? Переменные
+new a number
+new b number
+
+? Значения
+set a 10
+set b 9
+
+? Проверка условия с нашим главным героем (>) и вывод исходя из проверки
+if (a > b)
+  log string "a > b"
+else
+  log string "a < b"
+
+finish

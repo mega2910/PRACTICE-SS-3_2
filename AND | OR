@@ -11,12 +11,12 @@ set c 8
 ? Это И
 if (a > b)
     if (b > c)
-        log string "Оба условия истинны (a > b И b > c) - TRUE"
+        log string "TRUE - Оба условия истинны (a > b И b > c) - И"
     else
-        log string "Первое истина, второе ложь - FALSE"
+        log string "FALSE - Первое истина, второе ложь - И"
     close
 else
-    log string "Первое условие ложь - FALSE"
+    log string "FALSE - Первое условие ложь - И"
 close
 
 ? Это ИЛИ
@@ -32,8 +32,8 @@ if (b > c)
 close
   
 if (con > 0)
-  log string "Истина одно или более из условий верно - ИЛИ)
+  log string "TRUE- одно или более из условий верно - ИЛИ"
 else
-  log string "Ни одно из условий не верно"
+  log string "FALSE - Ни одно из условий не верно - ИЛИ"
 close
 finish

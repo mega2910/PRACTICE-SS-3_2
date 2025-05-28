@@ -32,4 +32,35 @@ if (b > 8)
 else
   log string "b = 9 - false"
 close
+
+? Проверка на не равнение (!=), допустим, я хочу к 9
+if (b > 8)
+  if (10 > b)
+    log string "b != 9 - false"
+  else
+    log string "b != 9 - true"
+  close
+else
+  log string "b != 9 - true"
+close
+
+? Проверка на больше или равно (>=)
+new i number
+set i 10
+set i i - 1
+if (a > i)
+	log string "a >= i - true"
+else
+  	log string "a >= i - false"
+close
+
+? Проверка на больше или равно (<=)
+new i1 number
+set i1 10
+set i1 i1 - 1
+if (a > i1)
+	log string "a <= i1 - false"
+else
+  	log string "a <= i1 - true"
+close
 finish

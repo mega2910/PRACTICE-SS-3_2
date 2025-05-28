@@ -1,0 +1,39 @@
+start
+
+new a number
+new b number
+new c number
+
+set a 10
+set b 6
+set c 8
+
+? Это И
+if (a > b)
+    if (b > c)
+        log string "Оба условия истинны (a > b И b > c) - TRUE"
+    else
+        log string "Первое истина, второе ложь - FALSE"
+    close
+else
+    log string "Первое условие ложь - FALSE"
+close
+
+? Это ИЛИ
+new con number
+set con 0
+
+if (a > b)
+  set con con + 1
+close
+  
+if (b > c)
+  set con con + 1
+close
+  
+if (con > 0)
+  log string "Истина одно или более из условий верно - ИЛИ)
+else
+  log string "Ни одно из условий не верно"
+close
+finish

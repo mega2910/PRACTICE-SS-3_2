@@ -1,0 +1,35 @@
+start
+? Создаем "массив" из 3 элементов
+new elem0 number
+set elem0 10
+new elem1 number
+set elem1 20
+new elem2 number
+set elem2 30
+
+? Переменная-индекс для доступа
+new index number
+set index 2  ? Обращаемся к третьему элементу
+
+? Определение через вложенные if-ки и ввод вспомогательной переменной
+new result number
+set result 0
+
+if (index > 0)
+    if (index > 1)
+        if (index > 2)
+            log string "Ошибка, а ну оне превышаем, гражданин"
+        else
+            set result elem2  ? index=2
+        close
+    else
+        set result elem1  ? index=1
+    close
+else
+    set result elem0  ? index=0
+close
+
+? Вывод результата
+log number result
+
+finish

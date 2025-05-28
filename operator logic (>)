@@ -10,8 +10,26 @@ set b 9
 
 ? Проверка условия с нашим главным героем (>) и вывод исходя из проверки
 if (a > b)
-  log string "a > b"
+  log string "a > b - true"
 else
-  log string "a < b"
+  log string "a > b - false"
+close
 
+? Тут тупо инверсируем? ну тип того в общем обратная запись a < b
+if (b > a)
+    log string "a < b - true"
+else
+    log string "a < b - false"
+close
+
+? Проверка на равнение, допустим, я хочу к 9
+if (b > 8)
+  if (10 > b)
+    log string "b = 9 - true"
+  else
+    log string "b = 9 - false"
+  close
+else
+  log string "b = 9 - false"
+close
 finish

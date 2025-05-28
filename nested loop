@@ -1,0 +1,18 @@
+start
+
+new i number
+new j number
+
+set i 1
+
+loop lp1 (11 > i)
+	log string "Этаж " >> i
+	set j 1
+	loop lp2 (11 > j)
+		log string " Номер " >> j
+		set j j + 1
+	end lp2
+	set i i + 1
+end lp1
+
+finish
